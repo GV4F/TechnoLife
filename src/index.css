@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@theme {
+  --theme-dark: #0D0D0D;
+  --theme-purple: #282B59;
+  --theme-lilac: #5D60A6;
+  --theme-mint: #7EF2B0;
+  --theme-skyBlue: #91F2CF;
+
+  --border-main: 12px;
+  --width: 90%;
+}
