@@ -1,11 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 @import "tailwindcss";
+
 @theme {
-  --theme-dark: #0D0D0D;
-  --theme-purple: #282B59;
-  --theme-lilac: #5D60A6;
-  --theme-mint: #7EF2B0;
-  --theme-skyBlue: #91F2CF;
+  --color-dark: #0D0D0D;
+  --color-purple: #282B59;
+  --color-lilac: #5D60A6;
+  --color-mint: #7EF2B0;
+  --color-skyBlue: #91F2CF;
+  --color-white: #F5F5F5;
+
+  --text-dark: #0D0D0D;
 
   --border-main: 12px;
-  --width: 90%;
+  --desktop-width: 90%;
+  --padding-main: 10px 20px;
+}
+
+.color-dark { background-color: var(--color-dark); }
+.color-purple { background-color: var(--color-purple); }
+.color-lilac { background-color: var(--color-lilac); }
+.color-mint { background-color: var(--color-mint); }
+.color-skyBlue { background-color: var(--color-skyBlue); }
+.color-white { background-color: var(--color-white); }
+
+.text-dark { color: var(--text-dark); }
+
+.border-main { border-radius: var(--border-main); }
+.desktop-width { width: var(--desktop-width); }
+.padding-main { padding: var(--padding-main); }
+
+*{
+  font-family: 'Orbitron', sans-serif;
+}
+body {
+  background-color: var(--color-dark);
 }

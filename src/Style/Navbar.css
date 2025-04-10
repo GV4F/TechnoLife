@@ -1,0 +1,33 @@
+.navbar {
+  position: sticky;
+  top: 10px;
+  margin: 10px auto;
+  z-index: 1000;
+  animation: navbar-color-animation auto both;
+  animation-timeline: scroll(root);
+  animation-range: 0 200px;
+  color: var(--color-white);
+}
+.navbar_home {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 10px auto;
+  z-index: 1000;
+}
+.navbar_background {
+  opacity: 0;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  animation: navbar-animation auto both;
+  animation-timeline: scroll(root);
+  animation-range: 0 200px;
+}
+@keyframes navbar-animation {
+  to { opacity: 1; }
+}
+@keyframes navbar-color-animation {
+  to { color: var(--color-dark); }
+}
