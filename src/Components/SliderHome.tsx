@@ -31,8 +31,8 @@ function SliderHome(): React.ReactElement {
               <div className={`item absolute inset-0 w-full h-full ${currentIndex == index ? "item_active" : ""}`} key={index}>
                 <img src={item.img} alt={item.title} className={`opacity-50 absolute left-[50%] bottom-[50px] border-main`} />
                 <div className={`item_content absolute top-[40%] left-[7%] z-10 flex flex-col justify-center items-center gap-5 select-none`}>
-                  <h2 className={`item_title text-mint text-3xl font-bold`}>{item.title}</h2>
-                  <p className={`text-sm font-semibold`}>{item.description}</p>
+                  <h2 className={`item_title text-mint font-bold sm:text-2xl md:text-3xl lg:text-4xl`}>{item.title}</h2>
+                  <p className={`font-semibold md:text-sm sm:text-xs`}>{item.description}</p>
                   <button className={`bg-color-mint text-dark font-semibold p-2 rounded-[8px] cursor-pointer text-xs`}>
                     {item.buttonText}
                   </button>
@@ -43,7 +43,7 @@ function SliderHome(): React.ReactElement {
         }
       </div>
 
-      <div className={`thumbnails absolute bottom-[50px] left-[50%] z-[100] flex gap-4`}>
+      <div className={`thumbnails absolute bottom-[50px] right-[5%] z-[100] flex gap-4`}>
         {
           SliderItems.map((item, index) => {
             return (
@@ -57,9 +57,9 @@ function SliderHome(): React.ReactElement {
             )
           })
         }
-      </div>
+      </div>  
 
-      <div className={`carousel_arrows absolute bottom-[5%] left-[50%] text-xl`}>
+      <div className={`carousel_arrows absolute bottom-[5%] left-[10%] text-xl`}>
         <button className="carousel_arrows-btn cursor-pointer" onClick={prevSlide}><BiSolidLeftArrow /></button>
         <button className="carousel_arrows-btn cursor-pointer" onClick={nextSlide}><BiSolidRightArrow /></button>
       </div>

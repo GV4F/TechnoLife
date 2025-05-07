@@ -5,9 +5,7 @@
   width: 100vw;
   height: 100vh;
 }
-.carousel .list .item {
-  opacity: 0;
-}
+.carousel .list .item { opacity: 0; }
 .carousel .list .item.item_active { opacity: 1; }
 .carousel .list .item img {
   object-fit: cover;
@@ -73,3 +71,17 @@
   animation: showThumbnail .5s linear 1 forwards;
 }
 @keyframes showThumbnail { to { opacity: 1; } }
+
+/* * MEDIA QUERIES */
+@media (max-width: 1300px) {
+  .thumbnails .thumbnail_item {
+    width: 100px;
+    height: 170px;
+  }
+}
+@media (max-width: 800px) {
+  .thumbnails .thumbnail_item {
+    width: 50px;
+    height: 85px;
+  }
+}
