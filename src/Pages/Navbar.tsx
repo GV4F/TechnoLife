@@ -14,7 +14,7 @@ function Navbar(): React.ReactElement {
   }, [location]);
 
   return (
-    <nav className={`${isHome ? "navbar_home" : "navbar"} desktop-width flex align-center justify-between padding-main`}>
+    <nav className={`${isHome ? "navbar_home" : "navbar"} desktop-width flex align-center justify-between padding-main text-light`}>
       <div className="navbar_background bg-[linear-gradient(to_right,var(--color-lilac),var(--color-mint))] border-main"></div>
         <h2 className="font-bold text-xl">TechnoLife</h2>
         <div className="links_container flex align-center justify-between gap-3 text-md">

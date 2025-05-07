@@ -16,14 +16,16 @@
   --padding-main: 10px 20px;
 }
 
-.color-dark { background-color: var(--color-dark); }
-.color-purple { background-color: var(--color-purple); }
-.color-lilac { background-color: var(--color-lilac); }
-.color-mint { background-color: var(--color-mint); }
-.color-skyBlue { background-color: var(--color-skyBlue); }
-.color-white { background-color: var(--color-white); }
+.bg-color-dark { background-color: var(--color-dark); }
+.bg-color-purple { background-color: var(--color-purple); }
+.bg-color-lilac { background-color: var(--color-lilac); }
+.bg-color-mint { background-color: var(--color-mint); }
+.bg-color-skyBlue { background-color: var(--color-skyBlue); }
+.bg-color-white { background-color: var(--color-white); }
 
 .text-dark { color: var(--text-dark); }
+.text-light { color: var(--color-white); }
+.text-mint { color: var(--color-mint); }
 
 .border-main { border-radius: var(--border-main); }
 .desktop-width { width: var(--desktop-width); }

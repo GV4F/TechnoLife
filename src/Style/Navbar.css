@@ -23,7 +23,7 @@
   z-index: -1;
   animation: navbar-animation auto both;
   animation-timeline: scroll(root);
-  animation-range: 0 200px;
+  animation-range: 0 150px;
 }
 @keyframes navbar-animation {
   to { opacity: 1; }

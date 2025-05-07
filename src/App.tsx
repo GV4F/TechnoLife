@@ -1,15 +1,18 @@
+import React, { lazy, Suspense } from "react"
 import "./App.css"
 import Navbar from "./Pages/Navbar"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // * PAGES
-import Home from "./Pages/Home";
-import Contact from "./Pages/Contact";
-function App() {
+const Home = lazy(() => import("./Pages/Home"));
+const Contact = lazy(() => import("./Pages/Contact"));
+
+function App(): React.ReactElement {
 
   return (
     <BrowserRouter>
       <Navbar />
+      <Suspense fallback={<div>Cargando página...</div>}></Suspense>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />

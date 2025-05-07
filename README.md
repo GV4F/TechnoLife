@@ -1,50 +1,58 @@
-# React + TypeScript + Vite
+# TechnoLife
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Tabla de Contenido
 
-Currently, two official plugins are available:
+* [1. Introducción](#1-introducción)
+* [2. Objetivos](#2-objetivos)
+* [3. Diseño](#3-diseño)
+    * [3.1 Arquitectura](#31-arquitectura)
+    * [3.2 Interfaz de Usuario](#32-interfaz-de-usuario)
+    * [3.3 Flujo de Usuario](#33-flujo-de-usuario)
+* [4. Tecnologías](#4-tecnologías)
+* [5. Despliegue](#5-despliegue)
+* [6. Consideraciones Adicionales](#6-consideraciones-adicionales)
+* [7. Conclusión](#7-conclusión)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 1. Introducción
 
-## Expanding the ESLint configuration
+* Este es un proyecto de prueba que emula la mayoría de características que tendría un Ecommerce orientado a la venta de productos tecnológicos.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 2. Objetivos
 
-- Configure the top-level `parserOptions` property like this:
+* Uno de los objetivos primordiales del proyecto es poner en practica lo conocimientos aprendidos.
+* Crear una interfaz atractiva e intuitiva.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 3. Diseño
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### 3.1 Arquitectura
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+* Diagrama de la arquitectura del sistema.
+* Descripción de los componentes y sus interacciones.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### 3.2 Interfaz de Usuario
+
+* Mockups o wireframes de la interfaz.
+* Descripción de la experiencia del usuario.
+
+### 3.3 Flujo de Usuario
+
+* Diagramas de flujo de usuario.
+* Descripción de los pasos que sigue el usuario.
+
+## 4. Tecnologías
+
+* Lista de tecnologías a utilizar (lenguajes, frameworks, etc.).
+* Justificación de la elección de tecnologías.
+
+## 5. Despliegue
+
+* Estrategia de despliegue.
+* Pasos para el despliegue en producción.
+
+## 6. Consideraciones Adicionales
+
+* Cualquier información adicional relevante.
+
+## 7. Conclusión
+
+* Resumen del proyecto y sus beneficios.
