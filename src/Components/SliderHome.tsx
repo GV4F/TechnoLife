@@ -1,60 +1,29 @@
 import React, { useState } from "react";
 import "../Style/SliderHome.css";
-import { AllImages } from "../assets/Exports/Images";
+import { SliderItems }  from "../assets/Exports/SliderItems";
 
 // * ICONS
 import { BiSolidLeftArrow } from "react-icons/bi";
 import { BiSolidRightArrow } from "react-icons/bi";
 
-const SliderItems = [
-  {
-    img: AllImages.bg_1,
-    title: "¡Welcome to TechnoLife!",
-    description: "Discover the latest in technology and gadgets.",
-    buttonText: "Shop Now",
-  },
-  {
-    img: AllImages.bg_2,
-    title: "Innovative Gadgets",
-    description: "Explore our range of innovative gadgets.",
-    buttonText: "Shop Now",
-  },
-  {
-    img: AllImages.bg_3,
-    title: "Tech for Everyone",
-    description: "Find the perfect tech for your needs.",
-    buttonText: "Shop Now",
-  },
-  {
-    img: AllImages.bg_4,
-    title: "Stay Ahead in Tech",
-    description: "Stay updated with the latest technology trends.",
-    buttonText: "Shop Now",
-  },
-];
-
 function SliderHome(): React.ReactElement {
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isActive, setIsActive] = useState<Boolean>(false);
-
   const nextSlide = ()=> {
     if (currentIndex < SliderItems.length - 1) { 
-      setCurrentIndex(currentIndex + 1); 
-      setIsActive(true);
+      setCurrentIndex(currentIndex + 1);
     }
     else { setCurrentIndex(0); }
   };
   const prevSlide = ()=> {
     if (currentIndex >= 1) { 
-      setCurrentIndex(currentIndex - 1); 
-      // setIsActive(false);
+      setCurrentIndex(currentIndex - 1);
     }
     if (currentIndex === 0) { setCurrentIndex(SliderItems.length - 1); }
   };
 
   return (
-    <section className={`carousel overflow-hidden relative ${isActive ? "next": "prev"}`}>
+    <section className={`carousel overflow-hidden relative`}>
       <div className={`list relative w-full h-full`}>
         {
           SliderItems.map((item, index)=> {
@@ -78,7 +47,11 @@ function SliderHome(): React.ReactElement {
         {
           SliderItems.map((item, index) => {
             return (
-              <div className={`thumbnail_item border-main bg-color-dark relative ${currentIndex === index ? "active" : ""}`} key={index}>
+              <div 
+                className={`thumbnail_item border-main bg-color-dark relative cursor-pointer ${currentIndex === index ? "active" : ""}`} 
+                key={index}
+                onClick={() => setCurrentIndex(index)}
+              >
                 <img src={item.img} alt={item.title} className={`w-full h-full border-main opacity-40`} />
               </div>
             )

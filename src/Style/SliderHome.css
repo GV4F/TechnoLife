@@ -58,7 +58,7 @@
   box-shadow: 0 2px 6px var(--color-mint);
   transition: box-shadow var(--content-transition);
 }
-.carousel.next .list .item.item_active img { animation: showImage .5s linear 1 forwards; }
+.carousel .list .item.item_active img { animation: showImage .5s linear 1 forwards; }
 @keyframes showImage {
   to {
     width: 100%;
@@ -68,7 +68,7 @@
     left: 0;
   }
 }
-.carousel.next .thumbnails .thumbnail_item.active img{
+.carousel .thumbnails .thumbnail_item.active img{
   overflow: hidden;
   animation: showThumbnail .5s linear 1 forwards;
 }
