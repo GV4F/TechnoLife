@@ -1,4 +1,11 @@
 .home {
-  width: 100vw;
-  height: 100vh;
+  position: relative;
+  width: 100%;
+  height: max-content;
+}
+.home .offer_banner {
+  width: var(--desktop-width);
+  height: 400px;
+  background: url("../assets/Img/offer_banner.png");
+  background-size: cover;
 }
