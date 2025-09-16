@@ -1,0 +1,8 @@
+footer {
+  display: grid;
+  grid-template-rows: 4fr 1fr;
+  background: linear-gradient(to bottom, var(--color-purple), var(--color-lilac));
+}
+footer .footer_socialnet {
+   
+}

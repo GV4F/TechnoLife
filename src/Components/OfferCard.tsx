@@ -5,7 +5,7 @@ import { AllImages as Images } from "../assets/Exports/Images";
 
 function OfferCard() {
   return (
-    <section className="desktop-width grid grid-cols-2 gap-3 text-dark relative ">
+    <section className="relative desktop-width grid gap-3 text-dark md:grid-cols-1 lg:grid-cols-2">
 
       <Atropos 
         className="card" shadow={false}

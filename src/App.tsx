@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // * PAGES
 const Home = lazy(() => import("./Pages/Home"));
 const Contact = lazy(() => import("./Pages/Contact"));
+import Footer from "./Pages/Footer";
 
 function App(): React.ReactElement {
 
@@ -17,8 +18,9 @@ function App(): React.ReactElement {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }
 
-export default App
+export default App;
